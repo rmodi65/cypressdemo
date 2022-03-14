@@ -16,7 +16,8 @@ describe('this is webtable demo scenario', () => {
     });
     it('search the coforge ltd and find the 52 week high and 52 week low',()=>{
         cy.visit("https://money.rediff.com/index.html")
-        cy.get('.txt_srch').type('Coforge ltd').type('{enter}')
+        cy.get('.txt_srch').type('Coforge ltd')
+        cy.get("[class='msprite btn_srch']").click()
         cy.title().should('include','COFORGE')
         //getcurrent price
         cy.get('#ltpid').invoke('text').then(function(value){
