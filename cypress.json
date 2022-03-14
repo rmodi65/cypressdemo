@@ -1,0 +1,15 @@
+{
+  "watchForFileChanges": true,
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "retries": 0,
+  "reporter": "cypress-mochawesome-reporter",
+  "screenshotOnRunFailure":true,
+  "reporterOptions": {
+    "reportDir": "cypress/report",
+    "charts": true,
+    "reportPageTitle": "Coforge Ltd. Cypress report",
+    "embeddedScreenshots":true
+  }
+  
+}
